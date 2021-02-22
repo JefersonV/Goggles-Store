@@ -47,16 +47,16 @@
 }
 
 .carousel-caption {
-  bottom: 50%;
+  bottom: 35%;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
 }
 
-.carousel-caption h5 {
+.carousel-caption h2 {
   font-size: 4em;
 }
 
-.carousel-caption p {
+.carousel-caption h2 h3 {
   font-size: 1.5em;
   letter-spacing: .4em;
 }
