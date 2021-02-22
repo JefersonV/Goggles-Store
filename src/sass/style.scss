@@ -3,6 +3,7 @@ $font-title: 'Inconsolata', monospace;
 $font-p: 'Roboto', sans-serif;
 $soft-black: #454546;
 $soft-gray: #e5e5e7;
+$dark-gray: #cccccc;
 /* colors */
 $red-btn: #f60b0e;
 $yellow: #ffc107;
@@ -45,7 +46,7 @@ $orange: #ff8d5b;
 .carousel {
 	&-inner {
 		height: 75vh;
-		margin-bottom: 10em;
+		
 	}
 	&-item {
 		
@@ -65,8 +66,56 @@ $orange: #ff8d5b;
 		h2 h3 {
 			font-size: 1.5em;
 			letter-spacing: .4em;
-		
 		}
 	} 
+}
 
+/* product */
+.product {
+	h2 {
+		margin: 1em 1em;
+	}
+	&-grid {
+		display: grid;
+		margin: 0 1em;
+	}
+	&-card {
+		border: 1px solid $soft-gray;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		img {
+			/* border: 1px solid skyblue; */
+			margin: auto;
+		}	
+	}
+	&-name {
+		color: $dark-gray;
+	}
+	&-price {
+		color: $red-btn;
+		font-weight: bold;
+	}
+	&-icons {
+		padding-bottom: .7em;
+	}
+}
+
+@media screen and(min-width:768px) {
+	.product {
+		&-grid {
+			grid-template-columns: 1fr 1fr;
+			gap: 1em;
+		
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.product {
+		&-grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }
