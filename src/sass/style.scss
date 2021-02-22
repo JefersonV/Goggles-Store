@@ -18,7 +18,7 @@ $orange: #ff8d5b;
 	font-family: $font-p;
 	font-weight: bold;
 	h1 {
-
+		
 		text-transform: uppercase;
 	}
 	&-icons {
@@ -38,4 +38,35 @@ $orange: #ff8d5b;
 		margin-left: 1.5em;
 		padding: 0 1em;
 	}
+}
+
+
+/* carousel component */
+.carousel {
+	&-inner {
+		height: 75vh;
+		margin-bottom: 10em;
+	}
+	&-item {
+		
+		img {
+			position: relative;
+			filter:brightness(0.6);
+		}
+	}
+	&-caption {
+		bottom: 50%;
+		font-family: $font-title;
+		font-weight: bold;
+		h5 {
+			font-size: 4em;
+			
+		}
+		p {
+			font-size: 1.5em;
+			letter-spacing: .4em;
+		
+		}
+	} 
+
 }
