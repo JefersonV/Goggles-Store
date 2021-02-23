@@ -66,6 +66,10 @@
 }
 
 /* product */
+.product {
+  /* day-counter */
+}
+
 .product h2 {
   margin: 1em 1em;
 }
@@ -78,6 +82,7 @@
 }
 
 .product-card {
+  position: relative;
   border: 1px solid #e5e5e7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +127,85 @@
 }
 
 .product-flotante {
-  webkit-transform: rotate(-90deg);
+  background: #f60b0e;
+  color: #fff;
+  right: -18px;
+  position: absolute;
+  top: 1.8em;
+  width: 79px;
+  font-size: 13px;
+  height: 29px;
+  text-align: center;
+  line-height: 2.3;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.product-flotante--primary {
+  background: #ffc107;
+}
+
+.product-flotante--skyblue {
+  background: #219ff3;
+}
+
+.product-flotante--gray {
+  background: gray;
+}
+
+.product-counter {
+  width: 100%;
+  text-align: center;
+}
+
+.product-counter figure {
+  width: 100%;
+  height: 260px;
+  background: url("../../assets/images/image-day-counter.jpg") no-repeat;
+  margin: 0;
+  background-size: cover;
+  margin-top: 3em;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+.product-counter h2 {
+  padding: 2em 0 0;
+  font-size: 1em;
+  color: white;
+  margin: 0;
+}
+
+.product-counter .simply-countdown-custom {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-counter .simply-amount {
+  padding-left: 1em;
+  font-size: 1em;
+  color: white;
+}
+
+.product-counter .simply-word {
+  display: block;
+  margin-left: .5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.product-after {
+  margin-top: 3em;
 }
 
 @media screen and (min-width: 768px) {
