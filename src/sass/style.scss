@@ -13,6 +13,10 @@ $orange: #ff8d5b;
 /* modules */
 
 
+.wrapper {
+	margin: 0 auto;
+	max-width: 1100px;
+}
 /*---> Header */
 .header {
 	text-align: center;
@@ -78,27 +82,44 @@ $orange: #ff8d5b;
 	&-grid {
 		display: grid;
 		margin: 0 1em;
+		gap: 1em;
 	}
 	&-card {
 		border: 1px solid $soft-gray;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
+		height: 310px;
 		img {
 			/* border: 1px solid skyblue; */
-			margin: auto;
+			margin: 0 auto;
 		}	
+		a {
+			margin-bottom: 1em;
+		}
 	}
 	&-name {
 		color: $dark-gray;
+		margin: 0;
 	}
 	&-price {
 		color: $red-btn;
 		font-weight: bold;
+		margin: 0;
 	}
 	&-icons {
+		width: 100%;
+		padding: 0 1.5em;
 		padding-bottom: .7em;
+		display: inherit;
+		justify-content: space-around;
+		
+		a {
+		
+		}
+	}
+	&-flotante {
+		webkit-transform: rotate(-90deg);
 	}
 }
 
@@ -106,7 +127,7 @@ $orange: #ff8d5b;
 	.product {
 		&-grid {
 			grid-template-columns: 1fr 1fr;
-			gap: 1em;
+			
 		
 		}
 	}
