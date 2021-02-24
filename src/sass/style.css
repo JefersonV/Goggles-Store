@@ -370,6 +370,53 @@
   color: #a0a0a1;
 }
 
+/* foooter */
+.footer {
+  background: #151515;
+}
+
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.footer-item {
+  margin: 1em .8em 0;
+}
+
+.footer-item svg {
+  fill: #cccccc;
+  margin: .3em .5em;
+}
+
+.footer-title {
+  border-bottom: 1px solid #a0a0a1;
+  padding-bottom: .5em;
+  color: white;
+}
+
+.footer-p {
+  font-size: .8em;
+  color: #a0a0a1;
+}
+
+.footer-p--sub {
+  font-size: .8em;
+  color: #f60b0e;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0 0 1em;
+}
+
+.footer-input {
+  background: transparent;
+  width: 100%;
+  padding: 0 .5em;
+  background: url("../../assets/icons/SVG/gmail.svg") right no-repeat;
+}
+
 @media screen and (min-width: 768px) {
   .product-grid {
     -ms-grid-columns: (1fr)[2];
@@ -410,6 +457,13 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 2em;
+  }
+  /* footer */
+  .footer-grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    margin: 0 4em;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,9 +3,12 @@ $font-title: 'Inconsolata', monospace;
 $font-p: 'Roboto', sans-serif;
 $soft-black: #454546;
 $soft-gray: #e5e5e7;
+
 $dark-gray: #cccccc;
 $blue-gray: #a0a0a1;
 $bg-gray: #f7f7f7;
+$bg-dark: #151515;
+
 /* colors */
 $red-btn: #f60b0e;
 $yellow: #ffc107;
@@ -321,6 +324,46 @@ $orange: #ff8d5b;
     }
   }
 
+  /* foooter */
+  .footer {
+  background: $bg-dark;
+    &-grid {
+      display: grid;
+    }
+    &-item {
+      margin: 1em .8em 0;
+      
+      svg {
+        fill: #cccccc;
+        margin: .3em .5em;
+      }
+    }  
+    &-title {
+      border-bottom: 1px solid $blue-gray;
+      padding-bottom: .5em;
+      color: white;
+    }
+    &-p {
+      font-size: .8em;
+      color: $blue-gray;
+    }
+    &-p--sub {
+      font-size: .8em;
+      color: $red-btn;
+    }
+    &-nav {
+      list-style: none;
+      padding: 0 0 1em;
+    }
+    &-input {
+      background: transparent;
+      width: 100%;
+      padding: 0 .5em;
+      background: url('../../assets/icons/SVG/gmail.svg') right no-repeat;
+      
+    }
+  }
+
 
 @media screen and(min-width:768px) {
  
@@ -349,6 +392,7 @@ $orange: #ff8d5b;
   }
 }
 
+
 @media screen and (min-width: 1024px) {
 	.product {
 		&-grid {
@@ -369,6 +413,15 @@ $orange: #ff8d5b;
     &-grid {
       grid-template-columns: repeat(4, 1fr);
       gap: 2em;
+    }
+  }
+
+  /* footer */
+  .footer {
+    &-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2em;
+      margin: 0 4em;
     }
   }
 }
