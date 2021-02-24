@@ -3,7 +3,7 @@
 /* modules */
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 /*---> Header */
@@ -40,8 +40,8 @@
 }
 
 /* carousel component */
-.carousel-inner {
-  height: 75vh;
+.carousel {
+  margin-bottom: 2em;
 }
 
 .carousel-item img {
@@ -160,25 +160,40 @@
 }
 
 .product-counter figure {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 260px;
   background: url("../../assets/images/image-day-counter.jpg") no-repeat;
   margin: 0;
   background-size: cover;
   margin-top: 3em;
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .product-counter h2 {
-  padding: 2em 0 0;
+  font-size: 2.5em;
+  padding: 0;
   font-size: 1em;
   color: white;
   margin: 0;
 }
 
 .product-counter .simply-countdown-custom {
-  height: 50%;
+  padding-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +207,7 @@
 
 .product-counter .simply-amount {
   padding-left: 1em;
-  font-size: 1em;
+  font-size: 1.2em;
   color: white;
 }
 
@@ -205,13 +220,13 @@
 }
 
 .product-after {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 /* testimonials */
 .testimonials {
   text-align: center;
-  margin: 1em 1em;
+  margin: 2.5em 0 0 0;
 }
 
 .testimonials-container {
@@ -249,16 +264,15 @@
 /* pick */
 .pick {
   width: 100%;
-  height: 225px;
   font-family: "Inconsolata", monospace;
-  margin-bottom: 2em;
+  margin: 2.5em 0 0 0;
 }
 
 .pick-grid {
   display: -ms-grid;
   display: grid;
   width: inherit;
-  height: inherit;
+  height: 300px;
 }
 
 .pick-1 {
@@ -327,12 +341,12 @@
 /* guaranted */
 .guaranted {
   background-color: #f7f7f7;
-  height: 300px;
-  margin: 3em 0;
+  padding: 1.5em;
+  margin: 5em 1em 0;
 }
 
 .guaranted-grid {
-  height: inherit;
+  height: 400px;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -360,7 +374,7 @@
 
 .guaranted-description h4 {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #ff8d5b;
   font-weight: bold;
 }
@@ -418,9 +432,28 @@
 }
 
 @media screen and (min-width: 768px) {
+  .product h2 {
+    margin: 0 .5em 1em;
+  }
   .product-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  /* counter */
+  .product-counter figure {
+    height: 300px;
+  }
+  .product-counter figure {
+    height: 460px;
+  }
+  .product-counter h2 {
+    font-size: 2em;
+  }
+  .product-counter .simply-amount {
+    font-size: 1.5em;
+  }
+  .product-counter .simply-word {
+    font-size: 1.5em;
   }
   /* pick */
   .pick-grid {
@@ -429,20 +462,35 @@
     gap: 1em;
   }
   /* guaranted */
-  .guaranted {
-    height: 200px;
-  }
   .guaranted-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 2em;
+    height: 200px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .product h2 {
+    font-size: 2.5em;
+  }
   .product-grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  /* counter */
+  .product-counter figure {
+    height: 460px;
+    background-position: 15% 15%;
+  }
+  .product-counter h2 {
+    font-size: 2.5em;
+  }
+  .product-counter .simply-amount {
+    font-size: 2em;
+  }
+  .product-counter .simply-word {
+    font-size: 2em;
   }
   /* help */
   .help-grid {
@@ -463,7 +511,6 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 2em;
-    margin: 0 4em;
   }
 }
 /*# sourceMappingURL=style.css.map */
