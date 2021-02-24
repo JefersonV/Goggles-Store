@@ -13,6 +13,8 @@
 		display: flex;
 		justify-content: center;
 		border-bottom: 1px solid $soft-gray;
+		width: 70%;
+		margin: 0 auto;
 		&-icon--cart {
 			p {
 				display: inline;
@@ -23,6 +25,16 @@
 		border: 1px solid $soft-gray;
 		margin-left: 1.5em;
 		padding: 0 1em;
+	}
+	.navbar {
+		margin: .5em 0;
+	}
+	.nav-link {
+		font-family: $font-title;
+		text-transform: uppercase;
+		color: $soft-gray;
+	}&.nav-link:hover {
+		color: $orange;
 	}
 }
 

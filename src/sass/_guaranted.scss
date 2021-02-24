@@ -19,6 +19,10 @@
         border-radius: 50%;
         margin-right: .5em;
       }
+      svg:hover {
+        fill: $orange;
+      }
+    
     } 
     &-description {
       font-family: $font-title;

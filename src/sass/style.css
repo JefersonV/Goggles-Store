@@ -22,6 +22,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: 1px solid #e5e5e7;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .header-icons-icon--cart p {
@@ -32,6 +34,20 @@
   border: 1px solid #e5e5e7;
   margin-left: 1.5em;
   padding: 0 1em;
+}
+
+.header .navbar {
+  margin: .5em 0;
+}
+
+.header .nav-link {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  color: #e5e5e7;
+}
+
+.header.nav-link:hover {
+  color: #ff8d5b;
 }
 
 /* carousel component */
@@ -61,6 +77,10 @@
 }
 
 /* product */
+.product {
+  /*  */
+}
+
 .product h2 {
   margin: 1em 1em;
 }
@@ -117,6 +137,10 @@
       justify-content: space-around;
 }
 
+.product-icons a svg:hover {
+  fill: #ff8d5b;
+}
+
 .product-flotante {
   background: #f60b0e;
   color: #fff;
@@ -143,48 +167,6 @@
 
 .product-flotante--gray {
   background: gray;
-}
-
-.product-card:hover .men-cart-pro {
-  opacity: 1;
-  visibility: visible;
-}
-
-.product .men-cart.pro {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
-  visibility: hidden;
-}
-
-.product .inner-men-cart-pro {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
-}
-
-.product .link-product-add-cart {
-  width: 42%;
-  top: 8em;
-  left: 28%;
-  margin: 0 auto;
-  position: absolute;
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  display: none;
 }
 
 .product .cart-active {
@@ -418,6 +400,10 @@
   margin: 0 1em;
 }
 
+.help-item svg:hover {
+  fill: #ff8d5b;
+}
+
 .help-description {
   margin: 3em 0 1.5em;
   color: #a0a0a1;
@@ -425,11 +411,17 @@
 }
 
 .help-btn {
+  width: 50%;
   background-color: white;
   border: 2px solid #ff8d5b;
   color: #454546;
   text-transform: uppercase;
   font-family: "Inconsolata", monospace;
+}
+
+.help-btn:hover {
+  background-color: #ff8d5b;
+  border: 1px solid white;
 }
 
 @media screen and (min-width: 768px) {
@@ -477,6 +469,10 @@
   border: 1px solid #a0a0a1;
   border-radius: 50%;
   margin-right: .5em;
+}
+
+.guaranted-item svg:hover {
+  fill: #ff8d5b;
 }
 
 .guaranted-description {

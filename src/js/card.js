@@ -7,4 +7,4 @@ function showBtn() {
     link.classList.toggle('cart-active')
 }
 
-image.addEventListener("click", showBtn);
+//image.addEventListener("click", showBtn);

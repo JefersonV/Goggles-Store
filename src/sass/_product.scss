@@ -39,6 +39,9 @@
 		padding-bottom: .7em;
 		display: inherit;
 		justify-content: space-around;
+		a svg:hover {
+			fill: $orange;
+		}
 	}
 	&-flotante {
 		background: $red-btn;
@@ -63,41 +66,10 @@
 	&-flotante--gray {
 		background: gray;
 	}
-	&-card:hover .men-cart-pro {
-		opacity: 1;
-    visibility: visible;
-	}
-	.men-cart.pro {
-		bottom: 0;
-		left: 0;
-		margin: auto;
-		opacity: 0;
-		overflow: hidden;
-		position: absolute;
-		right: 0;
-		text-align: center;
-		top: 0;
-		transition: all 0.5s ease-out 0s;
-		visibility: hidden;
-	}
-	.inner-men-cart-pro {
-		height: 100%;
-    position: relative;
-    width: 100%;
-    transition: all 0.5s ease-out 0s;
-	}
-	.link-product-add-cart {
-		width: 42%;
-		top: 8em;
-		left: 28%;
-		margin: 0 auto;
-		position: absolute;
-		transition: all 0.5s ease-out 0s;
-		font-size: 0.8em;
-		font-weight: 700;
-		letter-spacing: 2px;
-		display: none;
-	}
+	/*  */
+
+
+
 	.cart-active {
 		display: block;
 	}
