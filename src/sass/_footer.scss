@@ -1,0 +1,51 @@
+ /* foooter */
+ .footer {
+    background: $bg-dark;
+      &-grid {
+        display: grid;
+      }
+      &-item {
+        margin: 1em .8em 0;
+        
+        svg {
+          fill: #cccccc;
+          margin: .3em .5em;
+        }
+      }  
+      &-title {
+        border-bottom: 1px solid $blue-gray;
+        padding-bottom: .5em;
+        color: white;
+      }
+      &-p {
+        font-size: .8em;
+        color: $blue-gray;
+      }
+      &-p--sub {
+        font-size: .8em;
+        color: $red-btn;
+      }
+      &-nav {
+        list-style: none;
+        padding: 0 0 1em;
+      }
+      &-input {
+        background: transparent;
+        width: 100%;
+        padding: 0 .5em;
+        background: url('../../assets/icons/SVG/gmail.svg') right no-repeat;
+        
+      }
+    }
+  
+@media screen and (min-width: 1024px) {
+/* footer */
+  .footer {
+    &-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    
+  }
+}
+}
+  
